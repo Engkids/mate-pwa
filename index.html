@@ -1,13 +1,36 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mate PWA - Test Launch</title>
+  <meta charset="UTF-8">
+  <title>Mate Hybrid PWA</title>
+  <link rel="icon" href="icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 40px; }
+    h1 { font-size: 2em; margin-bottom: 0.5em; }
+    p { font-size: 1.2em; margin-bottom: 2em; }
+    button {
+      font-size: 1em;
+      padding: 1em 2em;
+      margin: 1em;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    <h1>Mate Hybrid PWA</h1>
-    <p>This is a test page to confirm successful deployment on GitHub Pages.</p>
+  <h1>Mate Hybrid PWA</h1>
+  <p>Click the buttons to hear British and American accents.</p>
+  <button onclick="document.getElementById('uk-audio').play()">Play UK Accent</button>
+  <button onclick="document.getElementById('us-audio').play()">Play US Accent</button>
+  <audio id="uk-audio" src="example-uk.mp3"></audio>
+  <audio id="us-audio" src="example-us.mp3"></audio>
 </body>
 </html>
