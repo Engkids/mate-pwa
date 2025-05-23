@@ -1,17 +1,21 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mate Hybrid PWA</title>
+  <title>Mate Hybrid PWA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png">
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 2em; }
+    button { font-size: 1.2em; padding: 1em 2em; margin: 1em; background: green; color: white; border: none; border-radius: 8px; }
+  </style>
 </head>
 <body>
-    <h1>Mate Hybrid PWA</h1>
-    <p>Click the buttons to hear British and American accents.</p>
-    <button onclick="document.getElementById('uk-audio').play()">Play UK Accent</button>
-    <button onclick="document.getElementById('us-audio').play()">Play US Accent</button>
-    <audio id="uk-audio" src="uk-audio.mp3"></audio>
-    <audio id="us-audio" src="us-audio.mp3"></audio>
+  <h1>Mate Hybrid PWA</h1>
+  <p>Click the buttons to hear British and American accents.</p>
+  <button onclick="document.getElementById('uk-audio').play()">Play UK Accent</button>
+  <button onclick="document.getElementById('us-audio').play()">Play US Accent</button>
+
+  <audio id="uk-audio" src="uk-audio.mp3"></audio>
+  <audio id="us-audio" src="us-audio.mp3"></audio>
 </body>
 </html>
